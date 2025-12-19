@@ -1,0 +1,5 @@
+## My ML projects
+pandas
+numpy 
+seaborn
+-e .
