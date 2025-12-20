@@ -13,35 +13,44 @@ Test preparation course
 Reading and writing scores
 The goal is to predict student performance(score).
 This is a regression problem.
-Project Structure
 
-MLproject/
-│
-├── artifacts/
-│ ├── data.csv
-│ ├── train.csv
-│ ├── test.csv
-│ ├── model.pkl
-│ └── preprocessor.pkl
-│
-├── notebook/
-│ ├── data/
-│ │ └── stud.csv
-│ └── catboost_training_config.json
-│
-├── src/
-│ ├── components/
-│ │ ├── data_ingestion.py
-│ │ ├── data_transformation.py
-│ │ └── model_trainer.py
-│ └── pipeline/
-      ├── logger.py
-      ├── exception.py
-│ └── predict_pipeline.py
-│
-├── logs/
-├── requirements.txt
-└── README.md
+Project Structure
+MLproject:
+Artifacts:
+Stores all generated outputs from the pipeline:
+- data.csv              : raw dataset copy
+- train.csv             : training data
+- test.csv              : testing data
+- model.pkl             : trained CatBoost model
+- preprocessor.pkl      : preprocessing pipeline
+Src:
+Contains the core machine learning logic and utilities:
+- exception.py          : custom exception handling
+- logger.py             : logging configuration
+Components:
+- data_ingestion.py         : loads and prepares the dataset
+- data_transformation.py   : feature engineering and preprocessing
+- model_trainer.py         : model training and evaluation
+Pipeline:
+Handles model inference using trained artifacts:
+- predict_pipeline.py   : inference pipeline
+- loads model.pkl and preprocessor.pkl
+- returns prediction output
+Notebook:
+Used for experimentation, data understanding, and configuration:
+- stud.csv              : original raw dataset
+- catboost_training_config.json : CatBoost hyperparameter configuration
+Logs:
+Stores execution and debugging logs generated during pipeline runs
+Configuration:
+- catboost_training_config.json : JSON-based model training parameters
+Setup:
+- setup.py              : package setup and project configuration
+Requirements:
+- requirements.txt      : Python dependencies for the project
+Documentation:
+- README.md             : project documentation (pre-deployment)
+
 Tech Stack
 python
 Pandas , NumPy
@@ -73,8 +82,6 @@ Data Ingestion
 How to Run the Project
 
 Step 1:Clone the repository
-
-```bash
 git clone <repository-url>
 cd MLproject
 
