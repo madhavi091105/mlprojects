@@ -1,10 +1,17 @@
 Student Performance Prediction - Machine Learning Project
- Project Overview
+ 
+Project Overview
 
 This project is an end-to-end Machine Learning pipeline built to predict student academic performance using demographic and educational features.  
-The project focuses on data preprocessing, model training, evaluation, and artifact management, following industry-level ML practices.
+The project focuses on data preprocessing
+model training
+evaluation
+artifact managementd
+
 Deployment is planned as the next phase and is not included in this version.
+
 Problem Statement
+
 Given student-related attributes such as:
 Gender
 Parental level of education
@@ -53,36 +60,42 @@ Documentation:
 
 Tech Stack
 python
-Pandas , NumPy
+Pandas 
+NumPy
 Scikit-Learn
 CatBoost
 Logging and Custom Exception Handling
 Git and GitHub
 Machine learning Pipeline
 
-Data Ingestion
+1.Data Ingestion
+
 - Dataset loaded from CSV
 - Supports both automated ingestion and pre-split datasets
 - Train and test datasets stored in artifacts
 
 2.Data Transformation
+
 - Numerical features scaled
 - Categorical features encoded
 - Preprocessing pipeline saved as preprocessor.pkl
 
 3.Model Training
+
 - Model used: CatBoost Regressor
 - Hyperparameters loaded from a JSON configuration file
 - Trained model saved as model.pkl
 
 4.Model Evaluation
+
 - Evaluation metrics: **R² Score / RMSE**
 - Model evaluated on the test dataset
 
 How to Run the Project
 
-Step 1:Clone the repository
-git clone <repository-url>
+Step 1:
+
+Clone the repository
 cd MLproject
 
 Step 2:Install dependencies
@@ -92,11 +105,13 @@ pip install -r requirements.txt
 Step 3:Run training pipeline
 
 python -m src.components.data_ingestion.data_ingestion
+
 Generated Artifacts
 train.csv
 test.csv
 preprocessor.pkl
 model.pkl
+
 These artifacts are ready to be used for inference and deployment.
 
 Key Highlights
