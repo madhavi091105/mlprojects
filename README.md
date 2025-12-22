@@ -19,11 +19,17 @@ Problem Statement
 
 Given student-related attributes such as:
 Gender
+
 Parental level of education
+
 Lunch type
+
 Test preparation course
+
 Reading and writing scores
+
 The goal is to predict student performance(score).
+
 This is a regression problem.
 
 Project Structure
@@ -63,14 +69,22 @@ Requirements:
 Documentation:
 - README.md             : project documentation (pre-deployment)
 
-Tech Stack
+Tech Stack:
+
 python
-Pandas 
+
+Pandas
+
 NumPy
+
 Scikit-Learn
+
 CatBoost
+
 Logging and Custom Exception Handling
+
 Git and GitHub
+
 Machine learning Pipeline
 
 1.Data Ingestion
