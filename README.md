@@ -1,6 +1,6 @@
-Student Performance Prediction - Machine Learning Project
+🧩 Student Performance Prediction - Machine Learning Project
  
-Project Overview
+📃Project Overview
 
 This project is an end-to-end Machine Learning pipeline built to predict student academic performance using demographic and educational features.  
 The project focuses on:
@@ -15,7 +15,7 @@ artifact management
 
 Deployment is planned as the next phase and is not included in this version.
 
-Problem Statement
+📌Problem Statement
 
 Given student-related attributes such as:
 Gender
@@ -32,7 +32,7 @@ The goal is to predict student performance(score).
 
 This is a regression problem.
 
-Project Structure
+📌Project Structure
 MLproject:
 Artifacts:
 Stores all generated outputs from the pipeline:
@@ -69,7 +69,7 @@ Requirements:
 Documentation:
 - README.md             : project documentation (pre-deployment)
 
-Tech Stack:
+📌Tech Stack:
 
 python
 
@@ -85,7 +85,7 @@ Logging and Custom Exception Handling
 
 Git and GitHub
 
-Machine learning Pipeline
+📌Machine learning Pipeline
 
 1.Data Ingestion
 
@@ -110,7 +110,7 @@ Machine learning Pipeline
 - Evaluation metrics: **R² Score / RMSE**
 - Model evaluated on the test dataset
 
-How to Run the Project
+📌How to Run the Project
 
 Step 1:
 
@@ -133,7 +133,7 @@ model.pkl
 
 These artifacts are ready to be used for inference and deployment.
 
-Key Highlights
+📌Key Highlights
 
 Modular and scalable ML pipeline
 
@@ -155,12 +155,12 @@ Flask / FastAPI REST API
 Model inference service
 Cloud deployment
 
-Conclusion
+📌Conclusion
 
 This project demonstrates a production-ready machine learning workflow up to the model training and evaluation stage.
 The trained model and preprocessing artifacts are prepared for seamless deployment in the next phase.
 
-Author 
+📌Author 
 
 Madhavi Chipade
 
