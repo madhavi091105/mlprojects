@@ -3,10 +3,15 @@ Student Performance Prediction - Machine Learning Project
 Project Overview
 
 This project is an end-to-end Machine Learning pipeline built to predict student academic performance using demographic and educational features.  
-The project focuses on data preprocessing
+The project focuses on:
+
+data preprocessing
+
 model training
+
 evaluation
-artifact managementd
+
+artifact management
 
 Deployment is planned as the next phase and is not included in this version.
 
