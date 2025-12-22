@@ -162,7 +162,7 @@ The trained model and preprocessing artifacts are prepared for seamless deployme
 
 📌Author 
 
-Madhavi Chipade
+ Madhavi Chipade
 
 
 
